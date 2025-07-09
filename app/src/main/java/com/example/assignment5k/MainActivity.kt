@@ -1,5 +1,5 @@
 package com.example.assignment5k
-//Start assignment5
+//Start assignment 5
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
