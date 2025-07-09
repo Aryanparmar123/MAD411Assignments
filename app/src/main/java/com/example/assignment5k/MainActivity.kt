@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
-
+//data class
     class Expense(val name: String, val amount: Double)
 
     private lateinit var nameInput: EditText
@@ -26,11 +26,11 @@ class MainActivity : AppCompatActivity() {
         amountInput = findViewById(R.id.amountInput)
         addButton = findViewById(R.id.addButton)
         recyclerView = findViewById(R.id.recyclerView)
-
+        //Set the recycle view
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = ExpenseAdapter(expenseList)
         recyclerView.adapter = adapter
-
+        //Set listener for the Add button
         addButton.setOnClickListener {
             val name = nameInput.text.toString()
             val amountText = amountInput.text.toString()
